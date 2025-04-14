@@ -1,2 +1,2 @@
 object Pangrams:
-   def isPangram(input: String): Boolean = ('a' to 'z').toSet.subsetOf(input.toLowerCase.toSet)
+   def isPangram(input: String): Boolean = ('a' to 'z').forall(input.toLowerCase.contains)
